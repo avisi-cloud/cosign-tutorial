@@ -158,6 +158,10 @@ And a final step we can verify our entire signing proces worked as expected by r
           cosign verify --key cosign.pub ghcr.io/avisi-cloud/${IMAGE_NAME}:${{ env.VERSION }} 
 ```
 
+You can see a full example [here](https://github.com/avisi-cloud/cosign-tutorial/blob/main/.github/workflows/release.yml).
+
+![example run](img/github-actions.png)
+
 ## Gitlab CI Pipelines
 
 This is also possible in Gitlab CI or any other CI service. Here is an example for in Gitlab:
