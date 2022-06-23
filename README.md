@@ -140,8 +140,7 @@ Now we can sign the images we just published to our registry by using `cosign si
 ```yaml
       - name: sign container image
         run: |
-            echo "$COSIGN_KEY" >> cosign.key
-            cosign sign --key cosign.key ghcr.io/avisi-cloud/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
+            cosign sign --key env://COSIGN_KEY ghcr.io/avisi-cloud/${{ env.IMAGE_NAME }}:${{ env.VERSION }}
         shell: bash
         env:
           COSIGN_KEY: ${{secrets.COSIGN_KEY}}
