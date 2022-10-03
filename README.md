@@ -1,5 +1,10 @@
 # Cosign tutorial - signing OCI artifacts
 
+Cosign allows us to sign our container images and verify the integrity when pulling images from our registry. This repository is a tutorial on how to use cosign to sign your OCI artifacts.
+
+Cosign is a project part of [sigstore](https://www.sigstore.dev/), an effort to introduce a new standard for signing, verifying and protecting software.
+
+# Tutorial
 
 ## Generate a key pair
 
