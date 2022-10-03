@@ -1,5 +1,7 @@
 # Cosign tutorial - signing OCI artifacts
 
+![Avisi Cloud Logo](https://docs.avisi.cloud/avisi-cloud-logo-black.png)
+
 Cosign allows us to sign our container images and verify the integrity when pulling images from our registry. This repository is a tutorial on how to use cosign to sign your OCI artifacts.
 
 Cosign is a project part of [sigstore](https://www.sigstore.dev/), an effort to introduce a new standard for signing, verifying and protecting software.
@@ -170,3 +172,7 @@ You can see a full example [here](https://github.com/avisi-cloud/cosign-tutorial
 ## Gitlab CI Pipelines
 
 This is also possible in Gitlab CI or any other CI service. Here is an example for in Gitlab:
+
+## License
+
+[MIT](LICENSE)
